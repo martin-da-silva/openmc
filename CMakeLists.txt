@@ -577,8 +577,8 @@ target_compile_features(openmc PUBLIC cxx_std_17)
 target_compile_features(libopenmc PUBLIC cxx_std_17)
 set_target_properties(openmc libopenmc PROPERTIES CXX_EXTENSIONS OFF)
 
-include_directories(/home/zoeprieto/anaconda3/envs/argonne/include)
-target_link_libraries(libopenmc /home/zoeprieto/anaconda3/envs/argonne/lib/libkdsource.so)
+include_directories(/home/martin/anaconda3/envs/openmn_develop/include)
+target_link_libraries(libopenmc /home/martin/anaconda3/envs/openmn_develop/lib/libkdsource.so)
 
 #===============================================================================
 # Python package

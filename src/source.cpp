@@ -462,7 +462,7 @@ SourceSite FileSource::sample(uint64_t* seed) const
 // KernelDensitySource implementation
 //==============================================================================
 
-KernelDensitySource::KernelDensitySource(pugi::xml_node node)
+KernelDensitySource::KernelDensitySource(pugi::xml_node node) : Source(node)
 {
   auto path = get_node_value(node, "KDSource", false, true);
   perturb = get_node_value_bool(node, "perturb");
